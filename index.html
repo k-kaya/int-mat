@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik Eğitiminde Web 2.0 Araçları</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Ana font olarak Inter'i ayarla */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Başlıklar için biraz daha yumuşak bir gölge */
+        .section-title {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        /* Kartlara pürüzsüz bir geçiş efekti ekle */
+        .tool-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Kartların üzerine gelince hafifçe büyü ve gölgeyi artır */
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Hero bölümü için yumuşak bir gradient */
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        /* Alternatif bir hero gradient (daha canlı) */
+        .hero-gradient-vibrant {
+             background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">
+                İnteraktif Matematik
+            </div>
+            <div class="space-x-4">
+                <a href="#overview" class="text-gray-600 hover:text-blue-500">Genel Bakış</a>
+                <a href="#tools" class="text-gray-600 hover:text-blue-500">Araçlar</a>
+                <a href="#benefits" class="text-gray-600 hover:text-blue-500">Faydaları</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient-vibrant text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 section-title" style="text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                Matematik Öğreniminde Yeni Yaklaşımlar
+            </h1>
+            <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto">
+                Web 2.0 araçlarıyla soyut kavramları somutlaştırın, işbirliğini artırın ve öğrenmeyi eğlenceli hale getirin.
+            </p>
+        </div>
+    </section>
+
+    <!-- Ana İçerik -->
+    <main class="container mx-auto px-6 py-16">
+
+        <!-- Genel Bakış Bölümü -->
+        <section id="overview" class="mb-20 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6 section-title">Web 2.0 Nedir? Matematik İçin Neden Önemli?</h2>
+            <p class="text-lg text-gray-700 max-w-4xl mx-auto text-center leading-relaxed">
+                Web 2.0, internetin sadece bilgi tüketilen değil, aynı zamanda kullanıcıların içerik ürettiği, paylaştığı ve işbirliği yaptığı bir platform olmasını ifade eder. Matematik eğitiminde bu, ders kitaplarının ötesine geçmek demektir. Öğrenciler artık pasif dinleyiciler değil, problemleri çözen, keşfeden ve kendi öğrenme süreçlerini yönlendiren aktif katılımcılardır.
+            </p>
+        </section>
+
+        <!-- Araçlar Bölümü -->
+        <section id="tools" class="mb-20 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12 section-title">Kategorilerine Göre Öne Çıkan Araçlar</h2>
+
+            <!-- Kategori: İnteraktif Görselleştirme ve Keşif -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-6 border-l-4 border-blue-500 pl-4">1. İnteraktif Görselleştirme ve Keşif</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Tool Card: GeoGebra -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">GeoGebra</h4>
+                            <p class="text-gray-600 mb-4">
+                                Cebir, geometri, istatistik ve kalkülüsü tek bir platformda birleştiren dinamik bir matematik yazılımıdır. Öğrencilerin grafikleri manipüle etmelerine ve geometrik şekillerle oynamalarına olanak tanır.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Görselleştirme</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Tüm Seviyeler</span>
+                        </div>
+                    </div>
+
+                    <!-- Tool Card: Desmos -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Desmos</h4>
+                            <p class="text-gray-600 mb-4">
+                                Güçlü ve kullanımı kolay bir çevrimiçi grafik hesap makinesidir. Fonksiyonları görselleştirme, parametreleri değiştirerek grafiğin nasıl değiştiğini anında görme imkanı sunar.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Grafik</span>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Cebir</span>
+                        </div>
+                    </div>
+
+                    <!-- Tool Card: Phet Simulations -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">PhET Simülasyonları</h4>
+                            <p class="text-gray-600 mb-4">
+                                Colorado Üniversitesi tarafından geliştirilen ücretsiz, interaktif matematik ve fen simülasyonları. Olasılık, kesirler ve fonksiyonlar gibi konuları eğlenceli deneylerle öğretir.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Simülasyon</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Ortaokul</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Kategori: Oyunlaştırma ve Alıştırma -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-green-700 mb-6 border-l-4 border-green-500 pl-4">2. Oyunlaştırma ve Alıştırma</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Tool Card: Kahoot! -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Kahoot!</h4>
+                            <p class="text-gray-600 mb-4">
+                                Sınıf içinde veya uzaktan eğlenceli, oyun tabanlı kısa sınavlar oluşturmanızı sağlar. Hızlı tempolu yapısıyla matematik problemlerini çözmek için rekabetçi ve motive edici bir ortam yaratır.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Oyunlaştırma</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Quiz</span>
+                        </div>
+                    </div>
+
+                    <!-- Tool Card: Quizizz -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Quizizz</h4>
+                            <p class="text-gray-600 mb-4">
+                                Kahoot'a benzer şekilde oyunlaştırılmış testler sunar, ancak öğrencilerin kendi hızlarında ilerlemelerine olanak tanır. Matematik alıştırmaları için harika bir ev ödevi aracıdır.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Oyunlaştırma</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Alıştırma</span>
+                        </div>
+                    </div>
+
+                    <!-- Tool Card: Khan Academy -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Khan Academy (Khan Akademi)</h4>
+                            <p class="text-gray-600 mb-4">
+                                Kapsamlı bir ücretsiz öğrenme platformu. Matematik konularını temel seviyeden ileri seviyeye kadar video dersler, alıştırmalar ve kişiselleştirilmiş öğrenme panelleri ile sunar.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Tüm Konular</span>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Video Ders</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kategori: İşbirlikçi Çalışma ve Problem Çözme -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-purple-700 mb-6 border-l-4 border-purple-500 pl-4">3. İşbirlikçi Çalışma ve Problem Çözme</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Tool Card: Miro -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Miro</h4>
+                            <p class="text-gray-600 mb-4">
+                                Sonsuz bir tuval sunan çevrimiçi bir dijital beyaz tahtadır. Öğrenciler grup halinde karmaşık matematik problemleri üzerinde çalışabilir, zihin haritaları oluşturabilir ve çözümlerini görselleştirebilir.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Beyaz Tahta</span>
+                            <span class="inline-block bg-gray-100 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">İşbirliği</span>
+                        </div>
+                    </div>
+
+                    <!-- Tool Card: Google Jamboard -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Google Jamboard</h4>
+                            <p class="text-gray-600 mb-4">
+                                Google Workspace ile entegre çalışan basit ve etkili bir dijital beyaz tahtadır. Gerçek zamanlı ortak çalışma için idealdir. Geometri çizimleri veya problem çözme adımları için kullanılabilir.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-pink-100 text-pink-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Beyaz Tahta</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Google Entegre</span>
+                        </div>
+                    </div>
+
+                    <!-- Tool Card: Edpuzzle -->
+                    <div class="tool-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Edpuzzle</h4>
+                            <p class="text-gray-600 mb-4">
+                                Herhangi bir videoyu (YouTube, Khan Academy vb.) interaktif bir derse dönüştürür. Videonun içine sorular, notlar ekleyerek öğrencilerin bir problemi anlama adımlarını takip etmelerini sağlar.
+                            </p>
+                        </div>
+                        <div class="mt-auto bg-gray-50 px-6 py-4">
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Video Ders</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Değerlendirme</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Faydaları Bölümü -->
+        <section id="benefits" class="scroll-mt-20 bg-white rounded-xl shadow-xl p-10 md:p-16 border border-gray-100">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12 section-title">Matematik Öğretiminde Sağladığı Faydalar</h2>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <span class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                            <!-- SVG ikonu: Göz -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-1">Soyutu Somutlaştırma</h4>
+                        <p class="text-gray-600">Grafik çiziciler ve simülasyonlar, fonksiyonların, denklemlerin ve geometrik şekillerin nasıl davrandığını gözle görülür hale getirir.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <span class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600">
+                            <!-- SVG ikonu: Kullanıcılar -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-2.874M15 15H9a3 3 0 00-3 3v2h12v-2a3 3 0 00-1.243-2.396M12 9a3 3 0 100-6 3 3 0 000 6zM3 20v-2a3 3 0 015.356-2.874M3 15H2a3 3 0 00-3 3v2h3v-2a3 3 0 00-1-2.47z"></path></svg>
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-1">Artan İşbirliği</h4>
+                        <p class="text-gray-600">Dijital beyaz tahtalar ve ortak çalışma alanları, öğrencilerin karmaşık problemler üzerinde birlikte düşünmelerini ve çözüm üretmelerini sağlar.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <span class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-100 text-purple-600">
+                            <!-- SVG ikonu: Zeka -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-1">Kişiselleştirilmiş Öğrenme</h4>
+                        <p class="text-gray-600">Khan Academy gibi platformlar, öğrencilerin kendi hızlarında ilerlemelerine ve eksik oldukları konulara odaklanmalarına imkan tanır.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <span class="flex items-center justify-center h-12 w-12 rounded-full bg-yellow-100 text-yellow-600">
+                            <!-- SVG ikonu: Kupa -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10c0-2.618-.954-4.997-2.571-6.848l-2.843 2.843m0 0a3.001 3.001 0 00-4.242 0 3.001 3.001 0 000 4.242M12 12l4.243 4.243"></path></svg>
+                        </span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-1">Yüksek Motivasyon</h4>
+                        <p class="text-gray-600">Oyunlaştırma araçları (Kahoot, Quizizz), matematik alıştırmalarını sıkıcı bir görev olmaktan çıkarıp eğlenceli bir yarışmaya dönüştürür.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-10 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Matematik 2.0. Tüm hakları saklıdır.</p>
+            <p class="text-sm text-gray-500 mt-2">Bu sayfa, matematik eğitimini desteklemek amacıyla hazırlanmıştır.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
